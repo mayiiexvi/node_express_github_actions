@@ -2,8 +2,11 @@ var express = require('express')
 
 var app = express()
 
+const path = require('path');
+
 const SERVER_PORT = 3000
 const SERVER_HOST = "localhost"
+
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
